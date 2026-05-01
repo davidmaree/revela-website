@@ -182,3 +182,46 @@
   });
 
 })();
+
+// ── Developer Watermark ──────────────────────────────
+(function () {
+  const INTERVAL = 20000;
+
+  const html = `
+    <div class="dm-overlay" id="dm-overlay">
+      <div class="dm-card">
+        <div class="dm-photo">
+          <img src="/Website essentials/profile3.png" alt="David Maree">
+        </div>
+        <div class="dm-body">
+          <p class="dm-label">BUILT BY</p>
+          <h2 class="dm-name">David Maree</h2>
+          <p class="dm-domain">davidmaree.xyz</p>
+          <p class="dm-msg">This website was designed and developed by David Maree. It is currently pending payment and will remain watermarked until the invoice is settled.</p>
+          <div class="dm-actions">
+            <a href="https://davidmaree.xyz" target="_blank" rel="noopener" class="dm-btn-primary">Visit davidmaree.xyz</a>
+            <button class="dm-btn-dismiss" id="dm-dismiss">Dismiss</button>
+          </div>
+        </div>
+      </div>
+    </div>`;
+
+  document.body.insertAdjacentHTML('beforeend', html);
+
+  const overlay = document.getElementById('dm-overlay');
+  const dismiss = document.getElementById('dm-dismiss');
+
+  function show() {
+    overlay.classList.add('dm-visible');
+    document.body.style.overflow = 'hidden';
+  }
+
+  function hide() {
+    overlay.classList.remove('dm-visible');
+    document.body.style.overflow = '';
+    setTimeout(show, INTERVAL);
+  }
+
+  dismiss.addEventListener('click', hide);
+  setTimeout(show, 3000);
+})();
