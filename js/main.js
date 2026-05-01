@@ -24,12 +24,12 @@
   updateNav();
 
   // Mark active link
-  const currentFile = window.location.pathname.split('/').pop() || 'index.html';
+  const currentPath = window.location.pathname.replace(/\.html$/, '').replace(/\/$/, '') || '/';
   document.querySelectorAll('.nav-links a, .nav-mobile a').forEach(link => {
     const href = link.getAttribute('href');
-    if (href === currentFile || (currentFile === '' && href === 'index.html')) {
-      link.classList.add('active');
-    }
+    if (!href || href.startsWith('http')) return;
+    const linkPath = href.replace(/\.html$/, '').replace(/\/$/, '') || '/';
+    if (currentPath === linkPath) link.classList.add('active');
   });
 
   // ── Mobile Menu ──────────────────────────────────────
@@ -191,12 +191,11 @@
     <div class="dm-overlay" id="dm-overlay">
       <div class="dm-card">
         <div class="dm-photo">
-          <img src="/Website essentials/profile3.png" alt="David Maree">
+          <img src="Website%20essentials/profile3.png" alt="David Maree">
         </div>
         <div class="dm-body">
           <p class="dm-label">BUILT BY</p>
-          <h2 class="dm-name">David Maree</h2>
-          <p class="dm-domain">davidmaree.xyz</p>
+          <h2 class="dm-name">DAVIDMAREE.XYZ</h2>
           <p class="dm-msg">This website was designed and developed by David Maree. It is currently pending payment and will remain watermarked until the invoice is settled.</p>
           <div class="dm-actions">
             <a href="https://davidmaree.xyz" target="_blank" rel="noopener" class="dm-btn-primary">Visit davidmaree.xyz</a>

@@ -57,6 +57,7 @@
 }
 
 .nav-links a {
+  position: relative;
   padding: 7px 13px;
   border-radius: 20px;
   font-size: 14px;
@@ -73,6 +74,18 @@
 
 .nav-links a.active {
   color: var(--magenta) !important;
+}
+
+.nav-links a.active::after {
+  content: '';
+  position: absolute;
+  bottom: 1px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 4px;
+  height: 4px;
+  border-radius: 50%;
+  background: var(--magenta);
 }
 
 /* — Book Now CTA — */
@@ -150,6 +163,7 @@
 }
 
 .nav-mobile a:hover { color: var(--white); }
+.nav-mobile a.active { color: var(--white); }
 
 .nav-mobile-tagline {
   position: absolute;
