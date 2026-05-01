@@ -217,14 +217,15 @@
 .hair-methods {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 2px;
-  background: var(--grey-2);
-  border-radius: var(--radius-lg);
+  gap: 16px;
+  background: transparent;
+  border-radius: 0;
   overflow: hidden;
 }
 
 .method-card {
-  background: var(--white);
+  background: var(--dark);
+  border-radius: 14px;
   padding: 36px 28px;
   display: flex;
   flex-direction: column;
@@ -233,7 +234,7 @@
   cursor: default;
 }
 
-.method-card:hover { background: var(--cream); }
+.method-card:hover { background: #1a1a1a; }
 
 .method-category {
   font-size: 9px;
@@ -247,21 +248,21 @@
   font-family: var(--font-display);
   font-size: clamp(18px, 1.6vw, 24px);
   font-weight: 400;
-  color: var(--dark);
+  color: var(--white);
   line-height: 1.2;
 }
 
 .method-desc {
   font-size: 13px;
   line-height: 1.65;
-  color: var(--grey-5);
+  color: rgba(255,255,255,0.5);
   flex: 1;
 }
 
 .method-detail {
   font-size: 11px;
   font-weight: 600;
-  color: var(--grey-3);
+  color: rgba(255,255,255,0.25);
   letter-spacing: 0.04em;
 }
 
@@ -330,33 +331,37 @@
 .benefits-full {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  gap: 1.5px;
-  background: rgba(255,255,255,0.06);
-  border-radius: var(--radius-md);
-  overflow: hidden;
+  gap: 16px;
+  background: transparent;
+  border-radius: 0;
+  overflow: visible;
 }
 
 .benefit-full-item {
-  background: rgba(255,255,255,0.03);
+  background: var(--white);
+  border-radius: 14px;
   padding: 22px 24px;
   display: flex;
   flex-direction: column;
   gap: 6px;
-  transition: background var(--t-fast);
+  transition: background var(--t-fast), transform var(--t-fast), box-shadow var(--t-fast);
 }
 
-.benefit-full-item:hover { background: rgba(255,255,255,0.06); }
+.benefit-full-item:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 12px 32px rgba(0,0,0,0.08);
+}
 
 .benefit-full-title {
   font-size: 14px;
   font-weight: 600;
-  color: var(--white);
+  color: var(--dark);
 }
 
 .benefit-full-desc {
   font-size: 12px;
   line-height: 1.6;
-  color: rgba(255,255,255,0.4);
+  color: var(--grey-5);
 }
 
 .benefit-icon {
@@ -368,7 +373,7 @@
 
 /* ── Beauty Section ──────────────────────────────── */
 
-.beauty-section { background: var(--cream); }
+.beauty-section { background: var(--white); }
 
 .beauty-intro {
   max-width: 640px;
@@ -384,7 +389,7 @@
 }
 
 .beauty-card {
-  background: var(--white);
+  background: var(--dark);
   border-radius: var(--radius-lg);
   overflow: hidden;
   transition: transform var(--t-slow), box-shadow var(--t-slow);
@@ -398,15 +403,21 @@
 .beauty-card-img {
   height: 220px;
   overflow: hidden;
-  background: var(--grey-2);
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  background: var(--dark);
+}
+
+.beauty-card-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  display: block;
 }
 
 .beauty-card-img-placeholder {
   width: 100%;
   height: 100%;
+  background: var(--dark);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -437,13 +448,13 @@
   font-family: var(--font-display);
   font-size: 22px;
   font-weight: 400;
-  color: var(--dark);
+  color: var(--white);
 }
 
 .beauty-card-desc {
   font-size: 13px;
   line-height: 1.65;
-  color: var(--grey-5);
+  color: rgba(255,255,255,0.5);
 }
 
 /* ── Service CTA ─────────────────────────────────── */

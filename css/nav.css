@@ -163,7 +163,7 @@
 }
 
 .nav-mobile a:hover { color: var(--white); }
-.nav-mobile a.active { color: var(--white); }
+.nav-mobile a.active { color: var(--magenta); }
 
 .nav-mobile-tagline {
   position: absolute;

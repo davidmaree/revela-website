@@ -161,7 +161,7 @@
   color: var(--dark);
 }
 
-/* ── People (Janie + Shapeshifter) ───────────────── */
+/* ── People (Jeanne + Shapeshifter) ───────────────── */
 
 .people-section { background: var(--cream); }
 
@@ -297,22 +297,27 @@
 .values-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 1.5px;
-  background: rgba(255, 255, 255, 0.06);
-  border-radius: var(--radius-lg);
-  overflow: hidden;
+  gap: 16px;
+  background: transparent;
+  border-radius: 0;
+  overflow: visible;
 }
 
 .value-item {
-  background: var(--dark);
+  background: var(--white);
+  border-radius: 14px;
   padding: 48px 36px;
   display: flex;
   flex-direction: column;
   gap: 18px;
-  transition: background var(--t-base);
+  transition: background var(--t-base), transform var(--t-slow), box-shadow var(--t-slow);
 }
 
-.value-item:hover { background: var(--dark-2); }
+.value-item:hover {
+  background: var(--white);
+  transform: translateY(-4px);
+  box-shadow: 0 16px 48px rgba(0, 0, 0, 0.08);
+}
 
 .value-number {
   font-family: var(--font-display);
@@ -326,13 +331,13 @@
   font-family: var(--font-display);
   font-size: clamp(22px, 2vw, 30px);
   font-weight: 400;
-  color: var(--white);
+  color: var(--dark);
 }
 
 .value-desc {
   font-size: 14px;
   line-height: 1.75;
-  color: rgba(255, 255, 255, 0.45);
+  color: var(--grey-5);
 }
 
 /* ── Journey / How It Came To Be ─────────────────── */
