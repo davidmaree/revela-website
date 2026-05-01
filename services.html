@@ -1,0 +1,489 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Services — Revèla</title>
+  <meta name="description" content="Explore Revèla's full range of services — premium hair extensions, body rolling, beauty treatments, and holistic wellness by expert specialists.">
+  <link rel="icon" type="image/png" href="Website essentials/favicon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,500&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/global.css">
+  <link rel="stylesheet" href="css/nav.css">
+  <link rel="stylesheet" href="css/services.css">
+</head>
+<body>
+
+  <!-- ══════════════════════════════════════════════
+       NAVIGATION
+  ══════════════════════════════════════════════════ -->
+  <nav class="nav transparent">
+    <div class="nav-inner">
+      <a href="index.html" class="nav-logo">
+        <img src="Website essentials/tlogobig.png" alt="Revèla">
+      </a>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="studio.html">Studio</a></li>
+        <li><a href="pricing.html">Pricing</a></li>
+        <li><a href="https://booksy.com/en-za/dl/show-business/35360?utm_medium=c2c_referral" target="_blank" rel="noopener" class="nav-cta">Book Now</a></li>
+      </ul>
+      <button class="nav-hamburger" aria-label="Open menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <div class="nav-mobile">
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="services.html">Services</a>
+    <a href="studio.html">Studio</a>
+    <a href="pricing.html">Pricing</a>
+    <a href="https://booksy.com/en-za/dl/show-business/35360?utm_medium=c2c_referral" target="_blank" rel="noopener">Book Now</a>
+    <p class="nav-mobile-tagline">Hair · Health · Beauty · Slimming</p>
+  </div>
+
+  <!-- ══════════════════════════════════════════════
+       HERO
+  ══════════════════════════════════════════════════ -->
+  <section class="services-hero">
+    <div class="services-hero-bg" data-parallax="0.2">
+      <img src="Website essentials/Studio 3.jpeg" alt="Revèla Services">
+    </div>
+    <div class="services-hero-overlay"></div>
+    <div class="services-hero-content">
+      <div class="section-label" data-reveal="fade">
+        <span style="color:rgba(255,255,255,0.5)">Everything We Offer</span>
+      </div>
+      <h1 class="t-h1" style="color:var(--white)" data-reveal>
+        Services crafted<br>for your transformation.
+      </h1>
+      <p class="t-body-lg services-hero-subtitle" data-reveal>
+        Hair, health, beauty, and slimming — four pillars of expertise united under one roof.
+      </p>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════════════════
+       STICKY SERVICE NAV
+  ══════════════════════════════════════════════════ -->
+  <nav class="services-nav" aria-label="Service categories">
+    <div class="services-nav-inner">
+      <a href="#hair" class="services-nav-link active">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2C8 2 5 5 5 9c0 4 3 7 5 9v2a1 1 0 001 1h2a1 1 0 001-1v-2c2-2 5-5 5-9 0-4-3-7-7-7z"/></svg>
+        Hair
+      </a>
+      <a href="#slimming" class="services-nav-link" data-section="slimming">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="9"/><circle cx="12" cy="12" r="4"/></svg>
+        Health
+      </a>
+      <a href="#slimming" class="services-nav-link">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 3c-3 0-5 2-6 5-.8 2-.8 4 0 6l2 4h8l2-4c.8-2 .8-4 0-6-1-3-3-5-6-5z"/></svg>
+        Slimming
+      </a>
+      <a href="#beauty" class="services-nav-link">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 4C8 4 5 7 5 11c0 5 4 9 7 9s7-4 7-9c0-4-3-7-7-7z"/><path d="M9 13c.8 2 1.7 3 3 3s2.2-1 3-3"/></svg>
+        Beauty
+      </a>
+    </div>
+  </nav>
+
+  <!-- ══════════════════════════════════════════════
+       HAIR SERVICES
+  ══════════════════════════════════════════════════ -->
+  <section id="hair" class="section service-section hair-section">
+    <div class="container">
+
+      <div class="hair-intro">
+        <div class="hair-intro-text" data-reveal="left">
+          <div class="section-label"><span>Hair Services</span></div>
+          <h2 class="t-h2">Expert hair,<br>extraordinary results.</h2>
+          <p class="t-body-lg">
+            Under the expert guidance of Janie, Revèla's hair services are built on one promise:
+            quality that lasts. Using 100% virgin human hair from Bono Hair — sourced from
+            trusted suppliers serving over 5,000 salons globally — every installation is a work of art.
+          </p>
+          <p class="t-body">
+            Whether you're adding length and volume with tape-in extensions, going for
+            a seamless colour transformation, or simply wanting a precision cut that frames
+            your face — Janie's technique and passion ensure results you'll love every day.
+          </p>
+          <a href="https://booksy.com/en-za/dl/show-business/35360?utm_medium=c2c_referral" target="_blank" rel="noopener" class="btn btn-primary">Book a Hair Appointment</a>
+        </div>
+        <div class="hair-intro-image" data-reveal="right">
+          <img class="hair-carousel-slide active" src="Website essentials/Before and after 1.jpeg" alt="Before &amp; After 1">
+          <img class="hair-carousel-slide" src="Website essentials/Before and after 2.jpeg" alt="Before &amp; After 2">
+          <img class="hair-carousel-slide" src="Website essentials/Before and after 3.jpeg" alt="Before &amp; After 3">
+          <img class="hair-carousel-slide" src="Website essentials/Before and after 4.jpeg" alt="Before &amp; After 4">
+          <img class="hair-carousel-slide" src="Website essentials/Before and after 5.jpeg" alt="Before &amp; After 5">
+          <img class="hair-carousel-slide" src="Website essentials/Before and after 6.jpeg" alt="Before &amp; After 6">
+          <img class="hair-carousel-slide" src="Website essentials/Before and after 7.jpeg" alt="Before &amp; After 7">
+          <img class="hair-carousel-slide" src="Website essentials/Before and after 8.jpeg" alt="Before &amp; After 8">
+          <button class="hair-carousel-prev" aria-label="Previous">&#8249;</button>
+          <button class="hair-carousel-next" aria-label="Next">&#8250;</button>
+          <div class="hair-carousel-dots">
+            <button class="hair-carousel-dot active" aria-label="Slide 1"></button>
+            <button class="hair-carousel-dot" aria-label="Slide 2"></button>
+            <button class="hair-carousel-dot" aria-label="Slide 3"></button>
+            <button class="hair-carousel-dot" aria-label="Slide 4"></button>
+            <button class="hair-carousel-dot" aria-label="Slide 5"></button>
+            <button class="hair-carousel-dot" aria-label="Slide 6"></button>
+            <button class="hair-carousel-dot" aria-label="Slide 7"></button>
+            <button class="hair-carousel-dot" aria-label="Slide 8"></button>
+          </div>
+        </div>
+      </div>
+
+      <div class="hair-methods-label" data-reveal>
+        <div class="section-label"><span>Extension Methods</span></div>
+        <h3 class="t-h3">Choose your method</h3>
+      </div>
+
+      <div class="hair-methods" data-stagger>
+
+        <div class="method-card">
+          <span class="method-category">Tape Applications</span>
+          <h4 class="method-name">Tape-In Extensions</h4>
+          <p class="method-desc">Lightweight and natural-looking tape wefts that blend seamlessly with your natural hair. The most popular choice for adding volume and length quickly. Medical-grade adhesive ensures secure, comfortable wear.</p>
+          <span class="method-detail">30–60 min install · 6–8 wk maintenance</span>
+        </div>
+
+        <div class="method-card">
+          <span class="method-category">Sewn-In Wefts</span>
+          <h4 class="method-name">Genius Weft</h4>
+          <p class="method-desc">The premium weft option — a hybrid of hand-tied and machine-made construction. Ultra-thin, beard-free edges that lay completely flat. Ideal for fine to medium hair seeking maximum natural movement.</p>
+          <span class="method-detail">1.5–2.5 hr install · 6–8 wk maintenance</span>
+        </div>
+
+        <div class="method-card">
+          <span class="method-category">Keratin Bonds</span>
+          <h4 class="method-name">K-Tip Extensions</h4>
+          <p class="method-desc">Individual strand extensions bonded with Italian keratin for a completely natural look. Keratin bonds provide exceptional hold while remaining invisible. Perfect for adding density and seamless length.</p>
+          <span class="method-detail">3–6 hr install · 6–8 wk maintenance</span>
+        </div>
+
+        <div class="method-card">
+          <span class="method-category">Instant Extensions</span>
+          <h4 class="method-name">Clip-In Extensions</h4>
+          <p class="method-desc">Premium clip-in extensions for special occasions or everyday wear. 100% virgin human hair clips that attach in minutes, give massive volume, and remove just as easily. Zero commitment, maximum impact.</p>
+          <span class="method-detail">Under 30 min · No maintenance</span>
+        </div>
+
+        <div class="method-card">
+          <span class="method-category">Cold Fusion</span>
+          <h4 class="method-name">I-Tip (Micro Bead)</h4>
+          <p class="method-desc">Heat-free application using tiny silicone-lined micro beads. No chemicals, no adhesive — just pure hair clamped strand by strand for the most natural finish. Excellent for fine or sensitive hair.</p>
+          <span class="method-detail">1.5–3 hr install · 6–8 wk maintenance</span>
+        </div>
+
+        <div class="method-card">
+          <span class="method-category">Halo &amp; Ponytail</span>
+          <h4 class="method-name">Halo &amp; Ponytail</h4>
+          <p class="method-desc">The Halo Wire sits gravity-based on your head with zero damage. Our professional ponytail extension clips on in under a minute. Both deliver dramatic length and volume with no commitment to your natural hair.</p>
+          <span class="method-detail">Under 5 min · Zero damage</span>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════════════════
+       HEALTH / BODY ROLLING (Shapeshifter)
+  ══════════════════════════════════════════════════ -->
+  <div id="health" aria-hidden="true" style="height:0;overflow:hidden"></div>
+  <section id="slimming" class="section service-section slimming-section">
+    <div class="container">
+
+      <div class="slimming-header" data-reveal>
+        <div class="section-label"><span>Body Wellness · Shapeshifter Studio</span></div>
+        <h2 class="t-h2">Body Rolling —<br>Transform from within.</h2>
+        <p class="t-body-lg">
+          Shapeshifter Studio's signature Body Rolling therapy is a revolutionary full-body treatment
+          that combines the best of physiotherapy, lymphatic drainage, and body sculpting
+          into a single, deeply therapeutic session.
+        </p>
+      </div>
+
+      <div class="slimming-grid" data-stagger>
+
+<div class="slimming-content">
+          <p class="t-body" style="color:rgba(255,255,255,0.55);line-height:1.8">
+            Using specialised rolling techniques, our therapists work your entire body — from
+            feet to shoulders — to stimulate lymphatic flow, break down fatty tissue, and
+            restore healthy circulation. The results go far beyond aesthetics.
+          </p>
+
+          <div class="benefits-full">
+
+            <div class="benefit-full-item">
+              <svg class="benefit-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                <path d="M12 2C6.5 2 2 6.5 2 12s4.5 10 10 10 10-4.5 10-10S17.5 2 12 2z"/>
+                <path d="M8 12c0-2.2 1.8-4 4-4s4 1.8 4 4" stroke-linecap="round"/>
+              </svg>
+              <span class="benefit-full-title">Lymphatic Drainage</span>
+              <span class="benefit-full-desc">Stimulates the lymphatic system to remove toxins and reduce swelling.</span>
+            </div>
+
+            <div class="benefit-full-item">
+              <svg class="benefit-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                <path d="M12 22V2M2 12h20" stroke-linecap="round"/>
+                <circle cx="12" cy="12" r="5"/>
+              </svg>
+              <span class="benefit-full-title">Improved Circulation</span>
+              <span class="benefit-full-desc">Boosts blood flow throughout the body for enhanced energy and recovery.</span>
+            </div>
+
+            <div class="benefit-full-item">
+              <svg class="benefit-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                <path d="M9 12l2 2 4-4M7.835 4.697a3.42 3.42 0 001.946-.806 3.42 3.42 0 014.438 0 3.42 3.42 0 001.946.806 3.42 3.42 0 013.138 3.138 3.42 3.42 0 00.806 1.946 3.42 3.42 0 010 4.438 3.42 3.42 0 00-.806 1.946 3.42 3.42 0 01-3.138 3.138 3.42 3.42 0 00-1.946.806 3.42 3.42 0 01-4.438 0 3.42 3.42 0 00-1.946-.806 3.42 3.42 0 01-3.138-3.138 3.42 3.42 0 00-.806-1.946 3.42 3.42 0 010-4.438 3.42 3.42 0 00.806-1.946 3.42 3.42 0 013.138-3.138z" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+              <span class="benefit-full-title">Toxin Detoxification</span>
+              <span class="benefit-full-desc">Accelerates the elimination of stored toxins through movement and pressure.</span>
+            </div>
+
+            <div class="benefit-full-item">
+              <svg class="benefit-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                <path d="M12 2c-4 0-7 3-7 7 0 3 2 5.5 5 6.5V18a1 1 0 001 1h2a1 1 0 001-1v-2.5c3-1 5-3.5 5-6.5 0-4-3-7-7-7z" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+              <span class="benefit-full-title">Reduces Cellulite</span>
+              <span class="benefit-full-desc">Breaks down subcutaneous fat deposits for visibly smoother skin.</span>
+            </div>
+
+            <div class="benefit-full-item">
+              <svg class="benefit-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                <path d="M13 10V3L4 14h7v7l9-11h-7z" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+              <span class="benefit-full-title">Boosts Metabolism</span>
+              <span class="benefit-full-desc">Activates metabolic processes to improve fat burning and energy use.</span>
+            </div>
+
+            <div class="benefit-full-item">
+              <svg class="benefit-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                <path d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+              <span class="benefit-full-title">Improved Sleep</span>
+              <span class="benefit-full-desc">Promotes deep relaxation of the nervous system for better quality rest.</span>
+            </div>
+
+            <div class="benefit-full-item">
+              <svg class="benefit-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                <path d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+              <span class="benefit-full-title">Pain &amp; Inflammation Relief</span>
+              <span class="benefit-full-desc">Reduces chronic inflammation and provides relief from muscular pain.</span>
+            </div>
+
+            <div class="benefit-full-item">
+              <svg class="benefit-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                <path d="M12 3c-4.5 0-8 4-8 9 0 4 3 8 8 8s8-4 8-8c0-5-3.5-9-8-9z" stroke-linecap="round"/>
+                <path d="M8 14c1 2.5 2.5 4 4 4s3-1.5 4-4" stroke-linecap="round"/>
+              </svg>
+              <span class="benefit-full-title">Body Shaping</span>
+              <span class="benefit-full-desc">Sculpts and contours your silhouette through consistent targeted treatment.</span>
+            </div>
+
+          </div>
+
+          <div style="display:flex;gap:14px;flex-wrap:wrap">
+            <a href="pricing.html" class="btn btn-primary">View Pricing</a>
+            <a href="https://booksy.com/en-za/dl/show-business/35360?utm_medium=c2c_referral" target="_blank" rel="noopener" class="btn btn-outline">Book a Session</a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════════════════
+       BEAUTY
+  ══════════════════════════════════════════════════ -->
+  <section id="beauty" class="section service-section beauty-section">
+    <div class="container">
+
+      <div class="beauty-intro" data-reveal>
+        <div class="section-label"><span>Beauty Services</span></div>
+        <h2 class="t-h2">Skincare &amp; beauty<br>at its finest.</h2>
+        <p class="t-body-lg">
+          Revèla stocks and applies premium skincare and beauty products — from professional-grade
+          treatments to curated retail. Our beauty specialists help you find the perfect regimen
+          and look for your skin type and lifestyle.
+        </p>
+      </div>
+
+      <div class="beauty-cards" data-stagger>
+
+        <div class="beauty-card">
+          <div class="beauty-card-img">
+            <div class="beauty-card-img-placeholder" style="background:linear-gradient(135deg,#f8d7e3,#fce4ec)">
+              <svg viewBox="0 0 48 48" fill="none" stroke="#C2286A" stroke-width="1.5">
+                <path d="M24 8C15 8 9 14 9 22c0 7 5 13 10 15v3h10v-3c5-2 10-8 10-15C39 14 33 8 24 8z"/>
+              </svg>
+            </div>
+          </div>
+          <div class="beauty-card-body">
+            <span class="beauty-card-tag">Skincare</span>
+            <h3 class="beauty-card-title">Facial Treatments</h3>
+            <p class="beauty-card-desc">Professional facial treatments tailored to your skin type. From deep cleansing and hydration to anti-ageing and brightening protocols — delivered with premium products and expert technique.</p>
+          </div>
+        </div>
+
+        <div class="beauty-card">
+          <div class="beauty-card-img">
+            <div class="beauty-card-img-placeholder" style="background:linear-gradient(135deg,#fce4ec,#f8d7e3)">
+              <svg viewBox="0 0 48 48" fill="none" stroke="#C2286A" stroke-width="1.5">
+                <path d="M24 6c-6 3-10 9-10 16 0 8 6 14 10 14s10-6 10-14C34 15 30 9 24 6z"/>
+                <path d="M24 6v30"/>
+              </svg>
+            </div>
+          </div>
+          <div class="beauty-card-body">
+            <span class="beauty-card-tag">Wellness</span>
+            <h3 class="beauty-card-title">Product Retail</h3>
+            <p class="beauty-card-desc">Our carefully curated product shelf features professional-grade skincare, hair care, and wellness products. Our specialists guide you to the right products for your unique needs and goals.</p>
+          </div>
+        </div>
+
+        <div class="beauty-card">
+          <div class="beauty-card-img">
+            <div class="beauty-card-img-placeholder" style="background:linear-gradient(135deg,#f5e8f2,#f0dcea)">
+              <svg viewBox="0 0 48 48" fill="none" stroke="#C2286A" stroke-width="1.5">
+                <rect x="10" y="10" width="28" height="28" rx="4"/>
+                <path d="M18 24h12M24 18v12"/>
+              </svg>
+            </div>
+          </div>
+          <div class="beauty-card-body">
+            <span class="beauty-card-tag">Consultation</span>
+            <h3 class="beauty-card-title">Beauty Consultation</h3>
+            <p class="beauty-card-desc">Not sure where to start? Our expert beauty consultants will assess your skin, hair, and body goals to create a personalised Revèla plan — combining all four pillars for complete transformation.</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════════════════
+       SERVICE CTA
+  ══════════════════════════════════════════════════ -->
+  <section class="services-cta">
+    <div class="container">
+      <div class="services-cta-inner" data-reveal>
+        <div class="section-label" style="justify-content:center"><span>Ready to begin?</span></div>
+        <h2 class="t-h2">Book your<br>Revèla experience.</h2>
+        <p class="t-body" style="color:var(--grey-4);text-align:center">
+          Consultations are available for all services. Get in touch to discuss your goals
+          and find the perfect combination of services for you.
+        </p>
+        <div style="display:flex;gap:14px;flex-wrap:wrap;justify-content:center">
+          <a href="https://booksy.com/en-za/dl/show-business/35360?utm_medium=c2c_referral" target="_blank" rel="noopener" class="btn btn-primary">Book Now</a>
+          <a href="pricing.html" class="btn btn-outline-dark">View Pricing</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════════════════
+       FOOTER
+  ══════════════════════════════════════════════════ -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <div class="footer-logo"><img src="Website essentials/tlogo2.png" alt="Revèla"></div>
+          <p class="footer-tagline">Hair · Health · Beauty · Slimming</p>
+          <p class="footer-desc">A premier wellness destination in Garsfontein where expert hair artistry and body transformation come together.</p>
+          <div class="footer-social">
+            <a href="https://www.facebook.com/revela" target="_blank" rel="noopener">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
+              Revèla
+            </a>
+          </div>
+        </div>
+        <div class="footer-col">
+          <h4>Navigate</h4>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="studio.html">Studio</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Services</h4>
+          <ul>
+            <li><a href="#hair">Hair Extensions</a></li>
+            <li><a href="#slimming">Body Rolling</a></li>
+            <li><a href="#beauty">Beauty</a></li>
+            <li><a href="pricing.html">Pricing</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Visit Us</h4>
+          <ul>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="https://booksy.com/en-za/dl/show-business/35360?utm_medium=c2c_referral" target="_blank" rel="noopener">Book Now</a></li>
+            <li><a href="#">Garsfontein, Pretoria</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>© 2026 Revèla. All rights reserved.</span>
+        <span>Hair · Health · Beauty · Slimming</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+  <script>
+    // Update services nav active state on scroll
+    const sections = ['hair','slimming','beauty'];
+    const navLinks  = document.querySelectorAll('.services-nav-link');
+
+    function updateServicesNav() {
+      let current = '';
+      sections.forEach(id => {
+        const el = document.getElementById(id);
+        if (el && el.getBoundingClientRect().top < window.innerHeight * 0.4) {
+          current = id;
+        }
+      });
+      navLinks.forEach(link => {
+        link.classList.toggle('active', link.getAttribute('href') === '#' + current);
+      });
+    }
+
+    window.addEventListener('scroll', updateServicesNav, { passive: true });
+
+    // Before/after carousel
+    (function () {
+      const slides = document.querySelectorAll('.hair-carousel-slide');
+      const dots   = document.querySelectorAll('.hair-carousel-dot');
+      let current  = 0;
+      let timer;
+
+      function goTo(index) {
+        slides[current].classList.remove('active');
+        dots[current].classList.remove('active');
+        current = (index + slides.length) % slides.length;
+        slides[current].classList.add('active');
+        dots[current].classList.add('active');
+      }
+
+      function startTimer() { timer = setInterval(() => goTo(current + 1), 3500); }
+      function resetTimer()  { clearInterval(timer); startTimer(); }
+
+      document.querySelector('.hair-carousel-prev').addEventListener('click', () => { goTo(current - 1); resetTimer(); });
+      document.querySelector('.hair-carousel-next').addEventListener('click', () => { goTo(current + 1); resetTimer(); });
+      dots.forEach((dot, i) => dot.addEventListener('click', () => { goTo(i); resetTimer(); }));
+
+      startTimer();
+    })();
+  </script>
+</body>
+</html>

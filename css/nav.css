@@ -1,0 +1,172 @@
+/* =====================================================
+   REVÈLA — Navigation
+   ===================================================== */
+
+.nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  height: var(--nav-height);
+  transition: background var(--t-base), box-shadow var(--t-base);
+}
+
+.nav.transparent {
+  background: transparent;
+}
+
+.nav.scrolled {
+  background: rgba(0, 0, 0, 0.88);
+  -webkit-backdrop-filter: saturate(160%) blur(24px);
+  backdrop-filter: saturate(160%) blur(24px);
+  box-shadow: 0 1px 0 rgba(255, 255, 255, 0.07);
+}
+
+.nav-inner {
+  max-width: var(--container-max);
+  margin: 0 auto;
+  padding: 0 var(--container-pad);
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* — Logo — */
+.nav-logo {
+  display: flex;
+  align-items: center;
+  height: 84px;
+  flex-shrink: 0;
+}
+
+.nav-logo img {
+  height: 84px;
+  width: auto;
+  display: block;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+/* — Links — */
+.nav-links {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.nav-links a {
+  padding: 7px 13px;
+  border-radius: 20px;
+  font-size: 14px;
+  font-weight: 500;
+  letter-spacing: 0.01em;
+  color: rgba(255, 255, 255, 0.82);
+  transition: color var(--t-fast), background var(--t-fast);
+}
+
+.nav-links a:hover {
+  color: var(--white);
+  background: rgba(255, 255, 255, 0.1);
+}
+
+.nav-links a.active {
+  color: var(--magenta) !important;
+}
+
+/* — Book Now CTA — */
+.nav-cta {
+  padding: 8px 20px !important;
+  background: var(--magenta) !important;
+  color: var(--white) !important;
+  border-radius: 100px;
+  box-shadow: 0 2px 14px rgba(194, 40, 106, 0.28);
+  transition: background var(--t-fast), transform var(--t-fast), box-shadow var(--t-fast) !important;
+}
+
+.nav-cta:hover {
+  background: var(--magenta-light) !important;
+  transform: translateY(-1px);
+  box-shadow: 0 4px 22px rgba(194, 40, 106, 0.4) !important;
+}
+
+/* — Hamburger — */
+.nav-hamburger {
+  display: none;
+  flex-direction: column;
+  gap: 5px;
+  width: 32px;
+  padding: 4px;
+  cursor: pointer;
+  background: none;
+  border: none;
+}
+
+.nav-hamburger span {
+  display: block;
+  height: 1.5px;
+  border-radius: 2px;
+  transition: transform var(--t-base), opacity var(--t-fast), background var(--t-base);
+}
+
+.nav-hamburger span {
+  background: rgba(255, 255, 255, 0.85);
+}
+
+/* — Mobile Overlay Menu — */
+.nav-mobile {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.97);
+  -webkit-backdrop-filter: blur(24px);
+  backdrop-filter: blur(24px);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 4px;
+  z-index: 999;
+  transform: translateY(-100%);
+  opacity: 0;
+  pointer-events: none;
+  transition: transform 0.5s var(--ease), opacity 0.5s var(--ease);
+}
+
+.nav-mobile.open {
+  transform: translateY(0);
+  opacity: 1;
+  pointer-events: all;
+}
+
+.nav-mobile a {
+  font-family: var(--font-display);
+  font-size: clamp(30px, 7vw, 52px);
+  font-weight: 300;
+  color: rgba(255, 255, 255, 0.75);
+  padding: 10px 48px;
+  letter-spacing: -0.01em;
+  transition: color var(--t-fast);
+}
+
+.nav-mobile a:hover { color: var(--white); }
+
+.nav-mobile-tagline {
+  position: absolute;
+  bottom: 40px;
+  font-family: var(--font-body);
+  font-size: 10px;
+  font-weight: 600;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: rgba(255,255,255,0.25);
+}
+
+/* =====================================================
+   RESPONSIVE
+   ===================================================== */
+
+@media (max-width: 860px) {
+  .nav-links { display: none; }
+  .nav-hamburger { display: flex; }
+}
