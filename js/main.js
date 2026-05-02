@@ -191,6 +191,10 @@
     <div class="dm-overlay" id="dm-overlay">
       <div class="dm-card">
         <div class="dm-photo">
+          <img src="Website%20essentials/jjlogo.png" alt="Revèla">
+        </div>
+        <div class="dm-photo-divider">✕</div>
+        <div class="dm-photo">
           <img src="Website%20essentials/profile3.png" alt="David Maree">
         </div>
         <div class="dm-body">
