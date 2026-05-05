@@ -554,6 +554,40 @@ ul, ol { list-style: none; }
 }
 
 /* =====================================================
+   SHINY SILVER EFFECT
+   ===================================================== */
+
+.powered-by-xyz {
+  background: linear-gradient(
+    110deg,
+    #999999 0%,
+    #e8e8e8 25%,
+    #ffffff 50%,
+    #e8e8e8 75%,
+    #999999 100%
+  );
+  background-size: 200% auto;
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  animation: shiny-silver 3s linear infinite;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  transition: opacity var(--t-fast);
+}
+
+.powered-by-xyz:hover {
+  opacity: 0.8;
+}
+
+@keyframes shiny-silver {
+  to {
+    background-position: 200% center;
+  }
+}
+
+/* =====================================================
    RESPONSIVE
    ===================================================== */
 
